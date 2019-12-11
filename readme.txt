@@ -22,9 +22,12 @@ sql injection için parametrize değer alıyor.
 Authentication için JWT kullanabilirdim fakat pdf'te authentication istenmediği için yazmadım.
 
 çalıştırmak için:
-
+sudo apt-get install redis-server kurulu olması gerekiyor.
+redis'e default conf'ta bağlanıyor. eğer farklı bir conf'ta çalışıyorsa app.py'de bulunan satır güncellenmeli.
+r = redis.Redis(host='hostname', port='portno')
 indirilen folder'da
 ubuntu'da:
+virtualenv i aktif etmek için: "source env/bin/activate" komutu çalıştırılır. ardından
 "env/bin/python main.py" komutu çalıştırılır ve bir terminal daha açılır "env/bin/rq worker" çalıştırılır.
 
 
