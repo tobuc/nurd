@@ -21,6 +21,12 @@ sql injection için parametrize değer alıyor.
 
 Authentication için JWT kullanabilirdim fakat pdf'te authentication istenmediği için yazmadım.
 
+çalıştırmak için:
+
+indirilen folder'da
+ubuntu'da:
+"env/bin/python main.py" komutu çalıştırılır ve bir terminal daha açılır "env/bin/rq worker" çalıştırılır.
+
 
 
 
